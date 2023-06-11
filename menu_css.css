@@ -1,0 +1,274 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+    background:
+    radial-gradient(
+            circle at bottom right,
+            lightgrey,
+            white 10%,
+            transparent
+        ),
+        radial-gradient(
+            circle at bottom left,
+            lightgrey,
+            white 10%,
+            transparent
+        );
+    overflow-x: hidden;  /*cache la barre déroulante qui va de gauche à droite */
+}
+
+/*en-tête*/
+header
+{
+    width: 100%;
+    display: block;
+    background-color: #cccccc;
+    margin: 0;
+    background-image:
+    radial-gradient(
+        circle at left 80vmin top 500px,
+        white 40%,
+        #aaa             
+    );
+    text-align: right;
+}
+
+header div
+{
+    width: 100%;
+}
+
+header img
+{
+    float:left;
+}
+
+h1
+{
+    padding: 0;
+    padding-right: 1%;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gros_titre
+{
+    padding: 0;
+    padding-top: 0.5%;
+    padding-right: 1%;
+    color: #ff3399;
+    font-size: 5em;
+}
+
+/* mise en page de la barre de navigation */
+#dv_nav
+{
+    display: block;
+    padding: 0;
+    padding-left: 27%;
+    margin: 0;
+}
+
+#nav 
+{
+    
+    list-style:none inside;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#nav li 
+{
+    display:block;
+    position:relative;
+    float:left;
+    text-align: center;
+    margin:0
+}
+
+/* dégradé de couleur de la barre de navigation */
+#nav #li_nav1 
+{
+    background-image: linear-gradient(to right,#E9E9E9,white);
+}
+#nav #li_nav2 
+{
+    background-image: linear-gradient(to right,white,#E9E9E9);
+}
+#nav #li_nav3 
+{
+    background-image: linear-gradient(to right,#E9E9E9,#DDD);   
+}
+#nav #li_nav4 
+{
+    background-image: linear-gradient(to right,#DDD,lightgrey);
+    padding-right: 1%;
+}
+
+#nav li a 
+{
+    margin: 5%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width:200px;
+    line-height:35px;
+    color: #EC018C;
+}
+
+/*couleur des textes de la navbar*/
+#nav #a_nav1 
+{
+    background-color:#EC018C;
+    color: white;
+}
+#nav #a_nav2 
+{
+    color: #B5D46F;
+    pointer-events: none; /* rend le lien incliquable*/
+}
+#nav #a_nav3 
+{
+    color:#00ACEF;
+    pointer-events: none; /* rend le lien incliquable*/
+}
+#nav #a_nav4 
+{
+    color: darkgrey;
+    pointer-events: none; /* rend le lien incliquable*/
+}
+
+/*mise en forme des sous-lien*/
+#nav ul 
+{
+    position:absolute;
+    padding:0;
+    left:0;
+    display:none; /* cache les sous lien */
+}
+
+#nav li:hover ul 
+{
+    display:block;  
+} /* montre les sousliens on hover */
+
+
+.souslien
+{
+    background-color: #fafafa;
+}
+
+/*wrapper principal*/
+#main
+{
+    height: 78vmin;
+    background: url("images/Jeune.PNG") no-repeat 45% 20%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/*mise en page des formulaires*/
+form
+{
+    width: 100%;
+    margin-top: 0%;
+}    
+
+label
+{
+    display: inline-block;
+}
+
+.article
+{
+    border: #ff3399 solid 2px;
+    margin: 0 auto;
+    padding: 0%;
+    margin-top: 1%;
+    display: inline-flex;
+    width: 45%;
+    margin-left: 30%;
+    background-color: #fff;
+
+    color: #EC018C;
+    font-size: 20px;
+    
+}
+.left
+{
+    width: 25%;
+    padding-top: 6%;
+    padding-left: 2%;
+    border: #ff3399 none 2px;
+    border-right-style: dashed;
+}
+.right
+{
+    margin: 0;
+    margin-left: 7%;
+    width: 95%;
+}
+
+#dv_consultant
+{
+    display: none;
+    background-color: #fff;
+    font-size: 20px;
+    margin-left: 50%;
+    padding: 2%;
+    width: 40%;
+}
+
+.button
+{
+    display: block;
+    background-color: #EC018C;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    margin: 40px 40px;
+    padding: 10px 40px;
+}
+
+label
+{
+    font-size: larger;
+    color: #EC018C;
+}
+
+input[type=text], input[type=email] 
+{
+    border: none;
+    border-bottom: 2px dotted palevioletred;
+    width: 35%;
+    font-family:MV Boli,cursive;
+    color: blue;
+    font-size: 1em;
+}
+
+#envoyer
+{
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 70%;
+}

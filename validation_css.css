@@ -1,0 +1,373 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    background:
+        radial-gradient(
+            circle at bottom right,
+            lightgrey,
+            white 10%,
+            transparent
+        ),
+        radial-gradient(
+            circle at bottom left,
+            lightgrey,
+            white 10%,
+            transparent
+        );
+    overflow: hidden;  /*cache la barre déroulante */
+}
+
+/*en-tête*/
+header
+{
+    width: 100%;
+    display: block;
+    background-color: #cccccc;
+    margin: 0;
+    background-image:
+    radial-gradient(
+        circle at left 80vmin top 500px,
+        white 40%,
+        #aaa             
+    );
+    text-align: right;
+}
+
+header div
+{
+    width: 100%;
+}
+
+header img
+{
+    float:left;
+}
+
+h1
+{
+    padding: 0;
+    padding-right: 1%;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gros_titre
+{
+    padding: 0;
+    padding-top: 0.5%;
+    padding-right: 1%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #45BB3A;
+    font-size: 5em;
+}
+
+/* mise en page de la barre de navigation */
+#dv_nav
+{
+    display: block;
+    padding: 0;
+    padding-left: 27%;
+    margin: 0;
+}
+
+#nav 
+{
+    
+    list-style:none inside;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#nav li 
+{
+    display:block;
+    position:relative;
+    float:left;
+    text-align: center;
+    margin:0
+}
+
+/* dégradé de couleur de la barre de navigation */
+#nav #li_nav1 
+{
+    background-image: linear-gradient(to right,#E9E9E9,white);
+}
+#nav #li_nav2 
+{
+    background-image: linear-gradient(to right,white,#E9E9E9);
+}
+#nav #li_nav3 
+{
+    background-image: linear-gradient(to right,#E9E9E9,#DDD);
+}
+#nav #li_nav4 
+{
+    background-image: linear-gradient(to right,#DDD,lightgrey);
+    padding-right: 1%;
+}
+
+#nav li a 
+{
+    margin: 5%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:block;
+    text-decoration:none;
+    width:200px;
+    line-height:35px;
+    color: #EC018C;
+}
+
+/*couleur des textes de la navbar*/
+#nav #a_nav1 
+{
+    color: #EC018C;
+}
+#nav #a_nav2 
+{
+    background-color:rgb(32, 126, 32);
+    color: white;
+    pointer-events: none; /* rend le lien incliquable*/
+}
+#nav #a_nav3 
+{
+    color:#00ACEF;
+    pointer-events: none;
+}
+#nav #a_nav4 
+{
+    color: #787878;
+}
+
+/*wrapper principal*/
+#main
+{
+    height: 74%;
+    background: url("images/referent.PNG") no-repeat 45% 0%;
+    margin: 0;
+    padding: 0;
+}
+
+.main
+{
+    justify-content: center;
+    width: 100%;
+}
+
+.titre
+{
+    text-align: center;
+    display: block;
+    color: limegreen;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*wrapper du 1er formulaire*/
+#main1
+{
+    display: flex;
+}
+
+/*wrapper du 2ème formulaire*/
+#main2
+{
+    display: none;
+}
+
+
+
+/*mise en page des formulaires*/
+form
+{
+    width: 100%;
+}
+    
+fieldset
+{
+    background-color: #ffffff;
+}
+
+.center
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 50em;
+    padding-top: 2%;
+    padding-left: 30%;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#center
+{
+    padding-left: 4%;
+    padding-top: 3%;
+    width: 50em;
+}
+
+.text_field
+{
+    font-size: 25px;
+    color: #B5D46F;
+    width: 90%;
+    height: auto;
+    border: #B5D46F solid 1px;
+}        
+
+input[type=text], input[type=email] {
+    border: none;
+    border-bottom: 2px dotted seagreen;
+    width: auto;
+    font-family:MV Boli,cursive;
+    color: blue;
+    font-size: 1em;
+}
+
+label
+{
+    display: inline-block;
+}
+
+.right
+{
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 7.8%;
+    width: 30%;
+    display: block;
+
+    font-size: 23px;
+}
+
+#right
+{
+    margin: 0 auto;
+    padding-top: 0.5%;
+
+    font-size: 17px;
+}
+
+h2
+{
+    background-color: green;
+    background-image:
+    linear-gradient(
+        to right,
+            #D5E260,
+            #45BB3A 80%
+        );
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    padding: 3%;
+    padding-left: 7%;
+    margin: 0%;
+}
+
+legend
+{
+    width: 250px;
+    text-align: center;
+    color: #B5D46F;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.field_checkbox
+{
+    border : 0;
+    margin: 0 auto;
+    padding: 0%;
+    display: inline-block;
+}
+
+.dv_checkbox
+{
+    padding: 4%;
+
+    background-color: green;
+    background-image:
+        radial-gradient(
+        circle at top left,
+            #e5f270,
+            #a5fB9A 80%
+        );
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+p
+{
+    color: #B5D46F;
+    font-size: 17px;
+    padding: 0%;
+    margin: 0 auto;
+}
+
+.submit
+{
+    display: block;
+    background-color: rgb(98, 187, 98);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 60px;
+    cursor: pointer;
+}
+
+
+
+#left
+{
+    padding-left: 12%;
+    padding-top: 1%;
+}
+
+#titre_commentaire
+{
+    font-size: 25px;
+    background-image:
+    radial-gradient(
+        circle at top left,
+            #f5fab0, 
+            #e5f260 50%
+        );
+}
+
+#commentaire
+{
+    resize: none; /*pour empêcher le textarea de pouvoir se faire resize*/
+    border: none;
+    background-image:
+    radial-gradient(
+        circle at top left,
+            #f5fab0, 
+            #d5e250 50%
+        );
+    font-family:MV Boli,cursive;
+    font-size: 15px;
+}
+
+
+
+
+

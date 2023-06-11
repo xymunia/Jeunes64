@@ -1,0 +1,389 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    overflow-x: hidden;  /*cache la barre déroulante qui va de gauche à droite */
+}
+
+/*en-tête*/
+header
+{
+    width: 100%;
+    display: block;
+    background-color: #cccccc;
+    margin: 0;
+    background-image:
+    radial-gradient(
+        circle at left 80vmin top 300px,
+        white 40%,
+        #aaa             
+    );
+    text-align: right;
+}
+
+header div
+{
+    width: 100%;
+}
+
+header img
+{
+    float:left;
+}
+
+h1
+{
+    padding: 0;
+    padding-right: 1%;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gros_titre
+{
+    padding: 0;
+    padding-top: 0.5%;
+    padding-right: 1%;
+    color: #00ACEF;
+    font-size: 5em;
+}
+
+/* mise en page de la barre de navigation */
+#dv_nav
+{
+    display: block;
+    padding: 0;
+    padding-left: 27%;
+    margin: 0;
+}
+
+#nav 
+{
+    
+    list-style:none inside;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#nav li 
+{
+    display:block;
+    position:relative;
+    float:left;
+    text-align: center;
+    margin:0
+}
+
+/* dégradé de couleur de la barre de navigation */
+#nav #li_nav1 
+{
+    background-image: linear-gradient(to right,#E9E9E9,white);
+}
+#nav #li_nav2 
+{
+    background-image: linear-gradient(to right,white,#E9E9E9);
+}
+#nav #li_nav3 
+{
+    background-image: linear-gradient(to right,#E9E9E9,#DDD);   
+}
+#nav #li_nav4 
+{
+    background-image: linear-gradient(to right,#DDD,lightgrey);
+    padding-right: 1%;
+}
+
+#nav li a 
+{
+    margin: 5%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width:200px;
+    line-height:35px;
+    color: #EC018C;
+}
+
+/*couleur des textes de la navbar*/
+#nav #a_nav1 
+{
+    pointer-events: none; /* rend le lien incliquable*/
+    color: #EC018C;
+}
+#nav #a_nav2 
+{
+    color: rgb(32, 126, 32);
+    pointer-events: none; /* rend le lien incliquable*/
+}
+#nav #a_nav3 
+{
+    background-color:#00ACEF;
+    color: white;
+    pointer-events: none; /* rend le lien incliquable*/
+}
+#nav #a_nav4 
+{
+    color: darkgrey;
+}
+
+
+
+
+
+
+#titre
+{
+    text-align: center;
+    display: block;
+    color: #00ACEF;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+
+/*mise en page des formulaires*/
+
+
+
+/*wrapper principal*/
+#main
+{
+    width: 100%;
+    background: url("images/consultant.PNG") no-repeat 45% 10%, 
+        radial-gradient(
+            circle at bottom right,
+            lightgrey,
+            white 10%,
+            transparent
+        ),
+        radial-gradient(
+            circle at bottom left,
+            lightgrey,
+            white 10%,
+            transparent
+        );
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+form
+{
+    width: 100%;
+}
+
+fieldset
+{
+    background-color: #ffffff;
+    width: 85%;
+}
+
+h2
+{
+    padding: 0%;
+    margin-top: 0%;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=email] {
+    border: none;
+    border-bottom: 2px dotted palevioletred;
+    width: auto;
+    font-family:MV Boli,cursive;
+    color: blue;
+    font-size: .78em;
+}
+
+h3
+{
+    background-color: lightgreen;
+    background-color: green;
+    background-image:
+    linear-gradient(
+        to right, 
+        white, 
+        #F35DB5 40%,
+        #EC018C
+        );
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    padding: 3%;
+    padding-left: 7%;
+    margin: 0%;
+}
+
+legend
+{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.wrapper_article
+{
+    width: 100%;
+    display: inline-flex;
+    padding-left: 10%;
+}
+
+.field
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+
+    padding-left: 2%;
+    padding-top:1%
+}
+
+.center
+{
+    padding-left: 0%;
+    margin: 0%;
+    width: 78%;
+
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.wrapper_left
+{
+    width: 43%;
+}
+
+.left_field
+{
+    border-color: #EC018C;
+    color: #EC018C;
+}
+
+.left_check
+{
+    background-image:
+        radial-gradient(
+        circle at top left,
+        #FDF6FB,
+        #FDEDF7 50%
+        );
+}
+
+.wrapper_right
+{
+    width: 43%;
+}
+
+.right_field
+{
+    border-color: #B5D46F;
+    color: #B5D46F;
+}
+
+.right_field input[type=text], .right_field input[type=email]
+{
+    border-color: #B5D46F;
+}
+
+.right_field h3
+{
+    background: linear-gradient(
+        to right,
+            #D5E260,
+            #45BB3A 80%
+        );
+}
+
+.petit_titre
+{
+    font-size: 14px;
+}
+
+
+
+
+.dv_check
+{
+    width: 31%;
+}
+
+.field_checkbox
+{
+    border : 0;
+    margin: 0 auto;
+    padding: 0%;
+    display: inline-block;
+    width: 95%;
+}
+
+.dv_checkbox
+{
+    color: black;
+}
+
+.right_check
+{
+    background-image:
+        radial-gradient(
+        circle at top left,
+            #e5f270,
+            #a5fB9A 80%
+        );
+}
+
+label
+{
+    display: inline-block;
+}
+
+.right
+{
+    margin: 0 auto;
+    padding-left: 20%;
+    width: 100%;
+}
+
+.dv_commentaire
+{
+    background-image:
+    radial-gradient(
+        circle at top left,
+            #e5f260, 
+            #e5eaa0 50%
+        );
+    margin-left: 54%;
+    margin-right: 10%;
+    padding: 1%
+}
+
+.titre_commentaire
+{
+    font-size: 25px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.commentaire
+{
+    resize: none; /*pour empêcher le textarea de pouvoir se faire resize*/
+    border: none;
+    font-family:MV Boli,cursive;
+    color: blue;
+    font-size: 15px;
+    margin: 0;
+}
